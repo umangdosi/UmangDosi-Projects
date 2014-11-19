@@ -1,0 +1,91 @@
+/*********pop_up_protfolio*****/
+/* Magnific Popup CSS */
+.mfp-bg {	
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1042;
+   overflow: hidden;
+   position: fixed;
+   background: #0b0b0b;
+   opacity: 0.9;
+   filter: alpha(opacity=80); }
+
+.mfp-wrap {
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1043;
+   position: fixed;
+   outline: none !important;
+   -webkit-backface-visibility: hidden; 
+ }
+.mfp-hide {
+  display: none !important;
+}
+button.mfp-close,
+button.mfp-arrow {
+   overflow: visible;
+   cursor: pointer;
+   border: 0;
+   -webkit-appearance: none;
+   display: block;
+   padding: 0;
+   z-index: 1046; }
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+/*Pricing table and price blocks*/
+.pricing-plans{
+	padding: 10px 0em;
+	background: #282A2E;
+}
+
+/*----*/
+.pricing-grid{
+	width: 100%;
+	float: left;
+	background: #313338;
+	text-align: center;
+	margin-right: 3.8%;
+	margin-top: 12px;
+}
+.pricing-grid:nth-child(3){
+	margin-right:0;
+}
+.pricing-grid h3 a{
+	background:#1BBC9D;
+	padding:5px 0;
+	display: block;
+	color: #FFF;
+	font-size: 1em;
+}
+.price-value a{
+	font-size: 1.2em;
+	color: #A0A1A1;
+	font-family: arial;
+}
+.price-value {
+	padding: 15px 0;
+}
+
+.pricing-grid ul li a{
+	color:#C0BEBE;
+	font-size:0.9em;;
+	text-align: center;
+	display: block;
+	padding: 0.4em 0em;
+}
+.cart{
+	padding: 10px 33% 48px;
+	display: block;
+	color: #FFF;
+}
+/*----*/
+/*------------pricing-tabels--------------------*/
+
+
