@@ -1,116 +1,428 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>The Parallel Website Template | Home :: w3layouts</title>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
-<link href="mobile/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<title>GetVendorsOnline | Home</title>
+
+<link href="web/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="SUBSCRIBE iphone web template, Andriod web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" type="text/css" href="mobile/css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="web/css/magnific-popup1.css">
+<link rel="stylesheet" type="text/css" href="web/css/prettyPhoto.css">
+	<!--  jquery plguin -->
+	<script type="text/javascript" src="web/js/jquery.min.js"></script>
+	<!--start slider -->
+	    <link rel="stylesheet" href="web/css/fwslider.css" media="all">
+		<script src="web/js/jquery-ui.min.js"></script>
+		<script src="web/js/css3-mediaqueries.js"></script>
+		<script src="web/js/fwslider.js"></script>
+	<!--end slider -->
+    <style type="text/css">
+	new 
+	{ background-color:#000000;
+	color:#000000;
+	}
+	body {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+    </style>
+ <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 500,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		<!-- Add fancyBox light-box -->
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<script>
+					$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 100,
+							mainClass: 'my-mfp-zoom-in'
+					});
+				});
+		</script>
+		<!-- //End fancyBox light-box -->
 </head>
 <body>
+
 <!-- start header -->
-<div class="header">
+
+<div class="header_bg">
 <div class="wrap">
-	<div class="logo">
-		<a href="index.html"><img src="mobile/images/logo.png" alt="" /></a>
-	</div>
-	 <div class="drp-dwn select">
-	        <select onchange="window.location=this.options[this.selectedIndex].value">
-				<option value="#home">Home</option>
-				<option value="#services">Services</option>
-				<option value="#portfolio">Portfolio</option>
-				<option value="#pricing">Pricing</option>
-				<option value="#about">About</option>
-				<option value="#contact">Contact</option>		
-			</select>
+	<div class="header">
+		<div class="logo">
+		<div class="image">
+			<a href="index.html"><img src="web/images/logo.png" alt=""></a>
+		</div>	
 		</div>
-	<div class="clear"></div>
+		<div class="h_right">
+			<ul class="menu">		
+				<li class="active"><a  href="#home">Home</a></li>
+				<li><a href="#services" class="scroll">Services</a></li>
+				<li><a href="#portfolio" class="scroll">Vendors</a></li>
+				<li><a href="#pricing" class="scroll">Pricing</a></li>
+				<li><a href="#about" class="scroll">About</a></li>
+				<li class="last"><a href="#contact"  class="scroll">Contact</a></li>
+			</ul>
+			<div id="sb-search" class="sb-search">
+				<form>
+					<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+					<input class="sb-search-submit" type="submit" value="">
+					<span class="sb-icon-search"></span>
+				</form>
+			</div>
+			<script src="web/js/classie.js"></script>
+			<script src="web/js/uisearch.js"></script>
+			<script>
+				new UISearch( document.getElementById( 'sb-search' ) );
+			</script>
+			
+	        <nav class="nav">
+	            <ul class="nav-list">
+	                <li class="nav-item"><a  href="#home">Home</a></li>
+	                <li class="nav-item"><a href="#services" class="scroll">Services</a></li>
+	                <li class="nav-item"><a href="#portfolio" class="scroll">Vendors</a></li>
+	                <li class="nav-item"><a href="#pricing" class="scroll">Pricing</a></li>
+	                <li class="nav-item"><a href="#about" class="scroll">About</a></li>
+	                <li class="nav-item"><a href="#contact"  class="scroll">Contact</a></li>
+	                <div class="clear"></div>
+	            </ul>
+	        </nav>
+	        <script type="text/javascript" src="web/js/responsive.menu.js"></script>
+			
+		</div>
+		<div class="clear"></div>
+	</div>
 </div>
-</div>	
+</div>
+
+<!----start-images-slider---->
+		<div class="web/images-slider">
+			<!-- start slider -->
+		    <div id="fwslider">
+		        <div class="slider_container">
 		            <div class="slide"> 
 		                <!-- Slide image -->
-		                    <img src="mobile/images/slider-bg.jpg" alt=""/>
-		                <!-- /Slide image -->	            
-		            </div>		         
+		                    <img src="web/images/image2.jpg" alt=""/>
+		                <!-- /Slide image -->
+		                <!-- Texts container -->
+		                <div class="slide_content">
+		                    <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title">Hello, We are GetVendorOnline.</h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description">Get every Vendor in you pocket!!</p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">	                      
+		                        </div>
+		                    </div>
+		                </div>
+		                 <!-- /Texts container -->
+		            </div>
+		            <!-- /Duplicate to create more slides -->
+		            <div class="slide">
+		                <img src="web/images/image2.jpg" alt=""/>
+		                <div class="slide_content">
+		                     <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title">From New York</h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description"></p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">		                      
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <!--/slide -->
+                    <!-- /Duplicate to create more slides -->
+		            <div class="slide">
+		                <img src="web/images/image15.jpg" alt=""/>
+		                <div class="slide_content">
+		                     <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title">To Hamburg  </h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description"></p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">		                      
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <!--/slide -->
+					<!-- /Duplicate to create more slides -->
+		            <div class="slide">
+		                <img src="web/images/image5.jpg" alt=""/>
+		                <div class="slide_content">
+		                     <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title">Everywhere it is possible with US.</h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description"></p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">		                      
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <!--/slide -->  
+                     <!-- /Duplicate to create more slides -->
+		            <div class="slide">
+		                <img src="web/images/image8.jpg" alt=""/>
+		                <div class="slide_content">
+		                     <div class="slide_content_wrap">
+		                        <!-- Text title -->
+		                        <h4 class="title">Join Us </h4>
+		                        <!-- /Text title -->
+		                        <!-- Text description -->
+		                        <p class="description"> Its free and Always will be ! </p>
+		                        <!-- /Text description -->
+		                        <div class="slide-btns description">		                      
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <!--/slide -->                   
+		        </div>
+		        <div class="timers"> </div>
+		        <div class="slidePrev"><span> </span></div>
+		        <div class="slideNext"><span> </span></div>
+		    </div>
+		    <!--/slider -->
+		</div>
 <!-----------service------------>
 <div  class="sevice" id="services">
 	<div class="wrap">
 		<div class="service-grids">
 			<h2>our Services</h2>
 						<div class="images_1_of_4">
-					 		<img src="mobile/images/cal.png">
-					 		<h3><a href=#>WebDesign</a></h3>
-					 		<p>Lorem ipsum is simply dummy text of the printing </p>				    
+					 		<img src="web/images/gvo1.png">
+					 		<h3><a>Vendor Application</a></h3>
+					 		<p>Everything is free, you just have to join us!</p>				    
 						</div>
 						<div class="images_1_of_4">
-							 <img src="mobile/images/port.png">
-							 <h3><a href=#>UIDesign</a></h3>
-							 <p>Lorem ipsum is simply dummy text of the printing</p>						   
+							 <img src="web/images/gvo3.png">
+							 <h3><a>Web Developement</a></h3>
+							 <p>Promote Business free !!.</p>						   
 						</div>
 						<div class="images_1_of_4">
-							 <img src="mobile/images/recyle.png">
-							 <h3><a href=#>Prototype</a></h3>
-							 <p>Lorem ipsum is simply dummy text of the printing</p>						   
+							 <img src="web/images/gvo4.png">
+							 <h3><a>Consutlting</a></h3>
+							 <p>Conasulting comes with experience. </p>						   
 						</div>
-						<div class="images_1_of_4">
-							 <img src="mobile/images/camera.png">
-							 <h3><a href=#>Photography</a></h3>
-							 <p>Lorem ipsum is simply dummy text of the printing</p>						   
-						</div>
+		  <div class="images_1_of_4">
+							 <img src="web/images/gvo2.png">
+							 <h3><a>Marketing</a></h3>
+							 <p>Marketing  !! Right at your door steps.</p>						   
+		  </div>
 						<div class="clear"> </div>
-		 </div>
+	  </div>
 </div>
 </div>
 <!-----------//service//------------>
 <!----------- message ------------>
 <div class="message">
 	<div class="wrap">
-		<h3>Do You Like This Clean Theme?</h3>
+	  <h3>More? Coming Soon !...</h3>
+		<div class="buttons">
+    <div class="span1">
+    	<a href="#contact">
+    		<i>Contact Us</i>
+            
+    		<div class="clear"></div>
+    	</a>
+        
+    </div>	
+    	
+</div>	
 </div>
 </div>	
-<!----------- portfolio ------------>
-<div class="portfolio" id="portfolio">
-<div class="wrap">
-	<h3>Portfolio</h3>
-	<ul>
-		<li><a href="#">Web-design</a></li>
-		<li><a href="#">UI Design</a></li>
-		<li><a href="#">Prototype</a></li>
-	</ul>
-	                 <div class="port-grids">
-							<div class="grid_1_of_4 span_1_of_4">
-					 			<div class="grid-block slide">						        	
-						        	<img src="mobile/images/port1.jpg" />					       
-						        </div>						 
-							</div>
-							<div class="grid_1_of_4 span_1_of_4">
-								<div class="grid-block slide">						        
-						        	<img src="mobile/images/port2.jpg" />					       
-						        </div>								
-							</div>
-							<div class="grid_1_of_4 span_1_of_4">
-								<div class="grid-block slide">						        	
-						        	<img src="mobile/images/port3.jpg" />					       
-						        </div>							 				    
-							</div>
-							<div class="grid_1_of_4 span_1_of_4">
-								<div class="grid-block slide">						        	
-						        	<img src="mobile/images/port4.jpg" />					       
-						        </div>								
-							 </div>
-							 <div class="clear"> </div>							 
-					</div>		
-	<h6><a href="#">Load more</a></h6>				
-	<a href="#"><img src="mobile/images/arrow.png"></a>
+  
+  <div id="cbp-so-scroller" class="cbp-so-scroller">
+        <!--Portfolio-->
+        <div id="portfolio" class="clearfix">
+            <div class="portfolio-bg"> </div>
+            <div class="typo1">
+                <div class="wrapper clearfix">
+                    <div class="section-title">
+                       <h3 class="heading">Vendors</h3>					  
+					   <h6> </h6>
+                    </div><!--end:section-title-->
+                    
+                    <div id="options" class="clearfix">
+                        <ul id="filters" class="option-set clearfix" data-option-key="filter">
+                        	 <li><a href="#filter" data-option-value=".web-design">Automobile</a></li>
+                            <li><a href="#filter" data-option-value=".photo">Electronics</a></li>
+                            <li><a href="#filter" data-option-value=".ios-app">Fashion</a></li>
+                            <li><a href="#filter" data-option-value=".graphic">Others</a></li>                        
+                        </ul><!--end:filters-->
+                    </div>
+                          
+                </div><!--end:wrapper-->
+                
+                <ul id="container" class="clickable cs-style-5 grid clearfix isotope" style="position: relative; overflow: hidden; height: 534px; width: 1475px;">
+            
+                    <li class="element photo isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
+                      <figure>
+                          <img src="web/images/vendor4.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="">Automobiles</a></h3>
+                             <div class="meta-box clearfix">
+                          
+                                <footer>
+                                   <div id="nivo-lightbox-demo"><p> <a href="addvertisement.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>                                   
+                                </footer>
+                                <div>
+                            </figcaption>
+                        </figure>
+                       
+                    </li>
+                        
+                    <li class="element web-design isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 0px, 0px);">
+                      <figure>
+                          <img src="web/images/auto2.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="">Automobile</a></h3>
+                                <div class="meta-box clearfix">
+                          
+                                <footer>
+                                    <div id="nivo-lightbox-demo"> <p> <a href="addvertisement.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>                                  
+                                </footer>
+                                </div>
+                        </figcaption>
+                      </figure>
+                        
+                    </li>
+                        
+                    <li class="element ios-app isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 0px, 0px);">
+                      <figure>
+                          <img src="web/images/vendor1.jpg" alt="">
+                          <figcaption>
+                                <h3><a>Fashion</a></h3>
+                              
+                                <footer>
+                                    <div id="nivo-lightbox-demo"> <p> <a href="addvertisement.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>                           
+                                </footer>
+                        </figcaption>
+                      </figure>
+                        
+                    </li>
+                        
+                    <li class="element graphic isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(885px, 0px, 0px);">
+                      <figure>
+                          <img src="web/images/vendor7.jpg" alt="">
+                          <figcaption>
+                                <h3><a>Real States</a></h3>
+                           
+                                <footer>
+                                    <div id="nivo-lightbox-demo"> <p> <a href="addvertisement.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>                                  
+                                </footer>
+                        </figcaption>
+                      </figure>
+                        
+                    </li>
+                        
+                    <li class="element photo isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(1180px, 0px, 0px);">
+                      <figure>
+                          <img src="web/images/vendor6.jpg" alt="">
+                          <figcaption>
+                                <h3><a>Electronics</a></h3>
+                                
+                                <footer>
+                                     <div id="nivo-lightbox-demo"> <p> <a href="addvertisement.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>                                   
+                                </footer>
+                        </figcaption>
+                      </figure>
+                       
+                    </li>
+                        
+                    <li class="element web-design isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 267px, 0px);">
+                      <figure>
+                          <img src="web/images/auto1.jpg" alt="">
+                          <figcaption>
+                                <h3><a href="#">Automobiles</a></h3>
+                                <div class="meta-box clearfix">
+                                    
+                                <footer>
+                                     <div id="nivo-lightbox-demo"> <p> <a href="addvertisement.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>                                    
+                                </footer>
+                                <div>
+                            </figcaption>
+                        </figure>
+                        
+                    </li>
+                        
+                    <li class="element ios-app isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(295px, 267px, 0px);">
+                      <figure>
+                          <img src="web/images/vendor3.jpg" alt="">
+                          <figcaption>
+                                <h3><a>Fahion</a></h3>
+                              
+                                <footer>
+                                    <div id="nivo-lightbox-demo"> <p> <a href="addvertisement.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>                                  
+                                </footer>
+    
+                        </figcaption>
+                      </figure>
+                        
+                    </li>
+                        
+                    <li class="element graphic isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 267px, 0px);">
+                      <figure>
+                          <img src="web/images/vendor2.jpg" alt="">
+                          <figcaption>
+                                <h3><a>Fashion</a></h3>
+                            
+                                <footer>
+                                   <div id="nivo-lightbox-demo"> <p> <a href="addvertisement.html" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> View</a> </p></div>                                  
+                                </footer>
+                        </figcaption>
+                      </figure>
+                      
+                </ul> <!-- #container -->
+
+            </div><!--end:typo1-->
+        </div>      
 </div>
-</div>	
+    <!-- portfolio_script_javascript-->
+     <script type="text/javascript" src="web/js/jquery.min.js"></script>
+     <script src="web/js/jquery.isotope.min.js"></script> 
+   	 <script src="web/js/jquery.prettyPhoto.js"></script>     
+	 <script src="web/js/custom.js"></script>  
+	 <script src="web/js/modernizr.custom.js"></script>
 <!----------- message1 ------------>
 <div class="message1">
 	<div class="wrap">
-		<h3>Pricing Table</h3>
-		<p>Clean beautiful flat Table</p>
+	  
+      <h3>Our pricings.</h3>
+		<p>Everything is FREE !!</p>
+      <div align="right" draggable="true">
+         <!-- <iframe allowtransparency="0" width="740" height="390" src="//www.youtube.com/embed/izYiDDt6d8s" frameborder="0" allowfullscreen></iframe> -->
+
+    </div>
+</div>
 </div>
 </div>	
 <!-----------start-pricing----------->
@@ -120,83 +432,116 @@
 						<div class="pricing-grids">
 						<div class="pricing-grid">							
 							<div class="price-value">
-								<a href="#">Wesite hosting</a>
+								<a href="">Vendor Details</a>
 							</div>
-							<h3><a href="#">$5.01/month</a></h3>
+							<h3><a>Free</a></h3>
 							<ul>
-								<li><a href="#">Lorem ipsum</a></li>
-								<li><a href="#">Dolor sitamet, Consect</a></li>
-								<li><a href="#">Adipiscing elit</a></li>
-								<li><a href="#">Proin commodo turips</a></li>
-								<li><a href="#">Laws pulvinarvel</a></li>
-								<li><a href="#">Prnare nisi pretium</a></li>
+								<li><a>Free Details</a></li>
+								<li><a>Free Contact</a></li>
+								<li><a>We will communicate with vendor for free</a></li>
+								<li><a>More than one Vendor application possible</a></li>
+								<li><a>Smooth process</a></li>
+								
 							</ul>
 							<div class="cart">
-								<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog"><i>Purchase</i></a>
+								<div class="span3"><a class="popup-with-zoom-anim" href="#contact"><i>Contact</i></a>
+                                <!-- instead of contact ...write #small dialog
+                                -->
 							</div>	
 							</div>
 						</div>
 						<div class="pricing-grid">
 							<div class="price-value">
-								<a href="#">Reseller cloud</a>
+								<a href="">Consulting</a>
 							</div>
-							<h3><a href="#">$10.01/month</a></h3>
+							<h3><a>Free</a></h3>
 							<ul>
-								<li><a href="#">Lorem ipsum</a></li>
-								<li><a href="#">Dolor sitamet, Consect</a></li>
-								<li><a href="#">Adipiscing elit</a></li>
-								<li><a href="#">Proin commodo turips</a></li>
-								<li><a href="#">Laws pulvinarvel</a></li>
-								<li><a href="#">Prnare nisi pretium</a></li>
+								<li><a>Client Offer</a></li>
+								<li><a>Business Consulting</a></li>
+								<li><a>Market Area</a></li>
+								<li><a>Negotiation</a></li>
+								<li><a>Risk Management</a></li>
+								
 							</ul>
 							<div class="cart">
-								<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog"><i>Purchase</i></a>
+								<div class="span3"><a class="popup-with-zoom-anim" href="#contact"><i>Contact</i></a>
 							</div>	
 							</div>
 						</div>
 						<div class="pricing-grid">							
 							<div class="price-value">
-								<a href="#">Dedicated hosting</a>
+								<a href="">Marketing</a>
 							</div>
-							<h3><a href="#">$20.01/month</a></h3>
+							<h3><a>Free</a></h3>
 							<ul>
-								<li><a href="#">Lorem ipsum</a></li>
-								<li><a href="#">Dolor sitamet, Consect</a></li>
-								<li><a href="#">Adipiscing elit</a></li>
-								<li><a href="#">Proin commodo turips</a></li>
-								<li><a href="#">Laws pulvinarvel</a></li>
-								<li><a href="#">Prnare nisi pretium</a></li>
+								<li><a>Business Strategy</a></li>
+								<li><a>Marketing Strategy</a></li>
+								<li><a>How to Start?</a></li>
+								<li><a>Brand Value</a></li>
+								<li><a>Target</a></li>
 							</ul>
 							<div class="cart">
-								<div class="span3"><a class="popup-with-zoom-anim" href="#small-dialog"><i>Purchase</i></a>
+								<div class="span3"><a class="popup-with-zoom-anim" href="#contact"><i>Contact</i></a>
 							</div>	
 							</div>
 						</div>
-							<div class="clear"> </div>																																								
+							<div class="clear"> </div>
+							
+							<div class="pricing-grids">
+						<div class="pricing-grid1">							
+							
+						
+						<!-- 4 more container code for other information,just like above box code -->
+												
+							<!-- ******* put div here  -->
+							  </div>																					
+						
 							</div>
 						<div class="clear"> </div>
 					</div>
 					<div class="client">
-						<h3><i>CLIENT ABOUT US</i></h3>
+						<h3><img src="web/images/line.png" /><i>CLIENT ABOUT US</i><img src="web/images/line.png" /></h3>
 						<div class="img">
-						     <img src="mobile/images/left.png" />
+						     <img src="web/images/left.png" />
 						</div>
 						<div class="data">
-						    <p>Lorem Ipsum is simply dummy</p>
-						    <p><a href="#">#INDUSTY</a></p>
+						    <p>Review. </p>
+						    <p><a>#NAME, COMPANY</a></p>
 						</div>
 						<div class="img1">
-						     <img src="mobile/images/right.png" />
+						     <img src="web/images/right.png" />
 						</div>
 						<div class="clear"> </div>
 					</div>
-				</div>
+				</div></div>  <!-- put this div at *** position when you write back the 4 container code -->
+
 			</div>
+			<!-- Add fancyBox light-box -->
+				<!-- Add fancyBox light-box -->
+		<script src="web/js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<script>
+					$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+					});
+				});
+		</script>
+		<!-- //End fancyBox light-box -->
+		<!----End-pricingplans---->
+<!-----------end-pricing------------->
 <!----------- message2 ------------>
 <div class="message2">
 	<div class="wrap">
 		<h3>Our team</h3>
-		<p>We a professional</p>
+		<p>We are a professional and hardworking team.</p>
 </div>
 </div>
 <!----------- about ------------>	
@@ -205,133 +550,287 @@
 		<h4>About Us</h4>
 	<div class="section group">
 				<div class="label_1_of_4 about_1_of_4">
-					 <img src="mobile/images/about1.jpg">
-					 <h3>MICHAEL TURNER </h3>
-					 <span>consectetur</span>
-					 <p>Lorem Ipsum is simply dummy.</p>			 
+					 <img src="web/images/about1.png">
+					 <h3></h3>
+					 <span>Front-End Developer</span>
+					 <p></p>							 
 				</div>
 				<div class="label_1_of_4 about_1_of_4">
-					 <img src="mobile/images/about2.jpg">
-					 <h3>JOHN SMITH </h3>
-					 <span>consectetur</span>
-					 <p>Lorem Ipsum is simply dummy.</p>					
+					 <img src="web/images/about1.png">
+					 <h3></h3>
+					 <span>Back-End Developer</span>
+					 <p></p>						
 				</div>
 				<div class="label_1_of_4 about_1_of_4">
-					 <img src="mobile/images/about3.jpg">
-					 <h3>ASHLEY HUNTER </h3>
-					 <span>consectetur</span>
-					 <p>Lorem Ipsum is simply dummy.</p>					
+					 <img src="web/images/about1.png">
+					 <h3></h3>
+					 <span>Marketing</span>
+					 <p></p>						
 				</div>
 				<div class="label_1_of_4 about_1_of_4">
-					 <img src="mobile/images/about4.jpg">
-					 <h3>TIM BIRD </h3>
-					 <span>consectetur</span>
-					 <p>Lorem Ipsum is simply dummy.</p>						
+					 <img src="web/images/about1.png">
+					 <h3></h3>
+					 <span>Consulting</span>
+					 <p></p>							
 				</div>
 		</div>
+	<div class="client">
+
+	</div>
 </div>
 </div>	
 <!----------- message3 ------------>
 <div class="message3">
 	<div class="wrap">
-		<h3>You Loked Over 6000px</h3>
-		<p>That's Great!</p>
+		<h3>Thank You for Believing </h3>
+		<p>and your Suppport!</p>
 </div>
 </div>
 <!--------start-contact-----------> 
+
+<!-- validation script -->
+
+<script type="text/javascript">
+function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+	var tri = /^[A-Za-z]+$/;
+    if (x == null || x == "") {
+        alert("First name must be filled out");
+        return false;
+    }
+	else if(x.length == "" || tri.test(x) == false)
+   {
+    alert( "Name should without numbers and space !"); 
+   }
+	 var y = document.forms["myForm"]["email"].value;
+    var atpos = y.indexOf("@");
+    var dotpos = y.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=y.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+	var z= document.getElementById("message").value;
+	if((z.length == "") || (z.length<10))
+   {
+    alert("Please message box with more than 10 characters ! Thank You");
+	return false;
+   }
+   else
+   {
+	  alert("Thank You For Your Valuable Feedback!");
+	  return true;
+   }
+}
+  
+ </script>
+ 
+
+ 
+ <!-- Validation script ends -->
+ 
+ <!-- contact html starts -->
+  
  <div class="contact" id="contact">
 	<div class="wrap">
 		<h2>Contact Us</h2>
 			<div class="contact-form">
 				<div class="form">
 					<h3>MAIL</h3>
-				  			<form method="post" action="#">
-							    	<input type="text" class="textbox" value=" Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-							    	<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				  			<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+							    	<input id="name" name="name" type="text" class="textbox" value=" Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+							    	<input id="email" name="email" type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
 										<div class="clear"> </div>
 								    <div>
-								    	<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Message';}">Message</textarea>
+								    	<textarea id="message" name="message" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Message';}">Message</textarea>
 								    </div>
 								<div class="span4">
-							    	<a href="#">
-							    		<i><input type="submit" value="Submit mail"></i>
+							    	
+							    		<i><input onClick="checkdetails()" type="submit" value="Submit mail"></i>
 							    		<div class="clear"></div>
-							    	</a>
+							    	
 							    </div>								
 							</form>
-						</div>
+			  </div>
 				<div class="para-contact">
-					<h4>MORE INFO</h4>				
+					<h4>MORE INFORMATION</h4>				
 		 		  <div class="get-intouch-left-address">
-		 		  	    <p>2345 Setwant natrer, 1234</p>
-						<p>Washington. United States.</p>
-						<p>2345 Setwant natrer, 1234</p>
-						<p>Washington. United States.</p>
-						<p>(401) 1234 567</p>
-						<p><a href="mailto:info@mycompany.com"> info(at)appstore.com</a></p>
-					</div>
+		 		  	    <p>Zimmer 122,</p>
+						<p>Bonhoefferstraße 9</p>
+						<p>69123, Heidelberg</p>
+						<p>Baden-Württemberg, Germany</p>
+						<p>(049) 176 30699 311</p>
+						<p><a href="https://outlook.com/"> umangdosi@outlook.com</a></p>
+				  </div>
 					<div class="span4">
-							    	<a href="#">
+							    <!--	<a href="#">
 							    		<i><input type="submit" value="Purchase"></i>
-							    		<div class="clear"></div>
+							    	-->	<div class="clear"></div>
 							    	</a>
-							    </div>		
+			      </div>		
 					<div class="clear"> </div>	
 				</div>
 						<a class="mov-top" href="#home1"> <span> </span></a>
 					 <div class="clear"> </div>
-				</div>
-  			</div>
-     </div>
+	  </div>
+   </div>
+</div>
 <!--------//end-contact----------->
 <!----------- message3 ------------>
 <div class="social">
 	<div class="wrap">
 		<h3>Connect With Us</h3>
 		<p>Follow Us On Social Networks</p>
+	<!---start-social-icons---->
+							<div class="social-icons-set">
+								<ul>
+									<li><a class="facebook" href="https://www.facebook.com/" target="_blank"> </a></li>
+									<li><a class="twitter" href="https://twitter.com/" target="_blank"> </a></li>
+									<li><a class="vimeo" href="https://www.linkedin.com/" target="_blank"> </a></li>
+									<li><a class="rss" href="https://www.rss.com/" target="_blank"></a></li>
+									<li><a class="gplus" href="https://plus.google.com/" target="_blank"> </a></li>
+									<li><a class="pin" href="https://youtube.com/" target="_blank"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+								<div class="clear"> </div>
+							</div>					
+							<!---//End-social-icons---->
+							<div class="clear"> </div>
 </div>
 </div>
 <!--- footer-top --->
 <div class="footer-top">
 	<div class="wrap">
 				<div class="col_1_of_3 span_1_of_3">
-					<h5>RECENT TWEETS</h5>
-					<h6><img src="mobile/images/twit.png" alt=""><a href="#"><span>booty, 15.10.2013</span></a></h6>
-					<p>Lorem Ipsum is simply dummy text of the  <lable>Lorem Ipsum has been</lable> the industry's standard </p>
-					<h6><img src="mobile/images/twit.png" alt=""><a href="#"><span>booty, 15.10.2013</span></a></h6>
-					<p>Lorem Ipsum is simply dummy text of the printing </p>
+					<h5>Recent Tweets</h5>
+                                            <a class="twitter-timeline"  href="https://twitter.com/GetVendorOnline" data-widget-id="508390517613142016">Tweets by @GetVendorOnline</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<h5>RECENT POSTS</h5>
-					<h6 class="a">15.10.2013</h6>
-					<p>Lorem Ipsum is simply dummy text of the printing</p>
-					<h6 class="a">15.10.2013</h6>
-					<p>Lorem Ipsum is simply dummy text of the printing</p>
-					<h6 class="a">15.10.2013</h6>
-					<p>Lorem Ipsum is simply dummy text of the printing</p>
-					
+					<h5>Latest on Social Media</h5>
+				<!--	<h6 class="a"></h6>
+					<p>Our commitment and hardwork brings you something new.</p>
+					<h6 class="a"></h6>
+					<p>Mobile application with lots of new features.</p>
+					<h6 class="a"></h6>
+					<p></p>
+					-->
+                    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-activity" data-app-id="ud.yudi" data-site="developers.facebook.com" data-action="likes, recommends" data-width="400" data-height="400" data-colorscheme="light" data-header="true"></div>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<h5>PHOTO STREAM</h5>
-					<ul>
-						<li><img src="mobile/images/port1.jpg" alt=""></li>
-						<li><img src="mobile/images/port2.jpg" alt=""></li>
-						<li><img src="mobile/images/port3.jpg" alt=""></li>
-						<li><img src="mobile/images/port4.jpg" alt=""></li>				
-						<li><img src="mobile/images/port2.jpg" alt=""></li>
-						<li><img src="mobile/images/port4.jpg" alt=""></li>									
-					</ul>
+					<h5>Find us on GoogleMaps</h5>
+					<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+   
+    function LoadGmaps() {
+        var myLatlng = new google.maps.LatLng(49.411960, 8.654740);
+        var myOptions = {
+            zoom: 16,
+            center: myLatlng,
+            disableDefaultUI: true,
+            panControl: true,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT
+            },
+
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+            },
+            streetViewControl: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById("MyGmaps"), myOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: "Bonhoefferstraße 9, Heidelberg, Germany"
+        });
+        var infowindow = new google.maps.InfoWindow({
+            content: "Get Vendor Online"
+        });
+        google.maps.event.addListener(marker, "click", function () {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+
+<body onload="LoadGmaps()" onunload="GUnload()">
+<!-- Map DIV -->
+<div id="MyGmaps" style="width:400px;height:400px;border:1px solid #CECECE;"></div>
+<!-- End of Maps DIV -->
+</body>
+
 				</div>
 				 <div class="clear"></div>
     </div>
 </div>
 <div class="footer-bottom">
 	<div class="wrap">
-		<div class="copy-right">
-			<p>Template <a href="http://w3layouts.com/">  w3layouts.com</a></p>
+		<div class="image">
+			<a href="index.html"><img src="web/images/logo.png" alt=""></a>
 		</div>	
+		<div>
+			
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			
+		</div>
+		<div class="h_right">
+			<ul class="menu">		
+				<li class="active"><a  href="#home">Home</a></li>
+				<li><a href="#services" class="scroll">Services</a></li>
+				<li><a href="#portfolio" class="scroll">Vendors</a></li>
+				<li><a href="#pricing" class="scroll">Pricing</a></li>
+				<li><a href="#about" class="scroll">About</a></li>
+				<li class="last"><a href="#contact"  class="scroll">Contact</a></li>
+			</ul>
+            
+	        <nav class="nav">
+	            <ul class="nav-list">
+	                <li class="nav-item"><a  href="#home">Home</a></li>
+	                <li class="nav-item"><a href="#services" class="scroll">Services</a></li>
+	                <li class="nav-item"><a href="#portfolio" class="scroll">Vendors</a></li>
+	                <li class="nav-item"><a href="#pricing" class="scroll">Pricing</a></li>
+	                <li class="nav-item"><a href="#about" class="scroll">About</a></li>
+	                <li class="nav-item"><a href="#contact"  class="scroll">Contact</a></li>
+	                <div class="clear"></div>
+	            </ul>
+	        </nav>
+	        <script type="text/javascript" src="web/js/responsive.menu.js"></script>
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+			
 		 <div class="clear"></div>
 	</div>
 </div>		
+  <!-- scroll_top_btn -->
+		<script type="text/javascript" src="web/js/move-top.js"></script>
+		<script type="text/javascript" src="web/js/easing.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 </body>
 </html>
+
