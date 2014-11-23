@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<link href="login.css" rel="stylesheet" media="screen" type="text/css">
+<title>HRMS | DELETE</title>
+<head>
+<script>
+
+function addstudent()
+{
+
+var k= document.getElementById("s").value;
+var za = /^[0-9]+$/;
+
+if(k.length == "" || za.test(k) == false)
+   {
+    alert("Please enter your Emp ID without alphabets & special characters");
+   }
+  else if(k.length!=4)
+   {
+    alert("Sorry!! EMP ID should only be of 4 digits ");
+   }    
+   else
+  {
+   var x=confirm("Account is Deleted !");
+  }
+}
+</script>
+<style type="text/css">
+body
+	{
+		background: #183026 url('../images/bg.jpg') no-repeat;
+		background-size: cover;
+		background-position: center 0;
+		background-attachment: fixed;
+	}
+	</style>
+</head>
+
+<body>
+<p class="p1"><a href="index.html">Home</a></p>
+<center>
+<img src="images/hrms1.21601905_std.jpg" width="521" height="174">
+</center>
+<div><h1 align="center"> DELELTE EMPLOYEE DETAILS </h1></div>
+                 
+  <h3></h3>   <br>   <br>
+  <br>
+            
+<form action="detele.php" method="post">
+<center>
+<div>
+  <table width="280" height="200">
+      <tr>
+      <td>
+      <h3><strong>Delete Employee Data </strong></h3></td>
+      </tr>
+        <td>EmployeeID:
+          <input type="text" value="" size="15" name="Employ" id="s"/></td>
+      </tr>
+ 
+      <tr>
+    <td><input type="submit" value="Delete" name="" onclick="addstudent()" /></td>
+  </tr>
+  
+  </table>
+</div>
+</center>
+</form>
+</body>
+</html>
+
+
